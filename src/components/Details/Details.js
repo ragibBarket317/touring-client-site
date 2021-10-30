@@ -19,7 +19,7 @@ const Details = () => {
             <h2 className="text-center mt-4">{place?.title}</h2>
             <div className="container py-5">
                 <div className="row">
-                    <div className="col-7 me-5 shadow p-4">
+                    <div className="col-md-7 col-12 me-md-5 shadow p-4">
                         <p className="text-muted">{place?.details}</p>
                         <div className="d-flex justify-content-start mt-3">
                             <h5 className="shadow px-4 py-2 bg-primary text-white rounded-pill me-2">{place?.duration}</h5>
@@ -32,7 +32,7 @@ const Details = () => {
                         <h6 className=" mt-4 border-bottom pb-2">INCLUDED: <span className="ms-4 text-muted fw-normal">{place?.includs}</span></h6>
                         <h6 className=" mt-4 border-bottom pb-2">NOT INCLUDED: <span className="ms-4 text-muted fw-normal">{place?.noIncluds}</span></h6>
                     </div>
-                    <div className="col-4 ms-4 bg-primary p-4 text-white h-100 shadow-sm">
+                    <div className="col-md-4 col-12 ms-md-4 mt-4 mt-md-0 bg-primary p-4 text-white h-100 shadow-sm">
                         <BookingForm></BookingForm>
                     </div>
                 </div>

@@ -3,7 +3,6 @@ import banner1 from '../../images/banner1.jpg'
 import banner2 from '../../images/banner2.jpg'
 import banner3 from '../../images/banner3.jpg'
 import banner4 from '../../images/banner4.jpg'
-import banner5 from '../../images/banner5.jpg'
 import { Carousel, Container, Row } from 'react-bootstrap';
 import './Home.css';
 import { useState } from 'react';
@@ -30,8 +29,8 @@ const Home = () => {
                     />
                     <Carousel.Caption className="mb-5 pb-5">
                         <div className="mb-5 pb-5">
-                            <h3>Third slide label</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <h1>enjoy your tour with FunTouring</h1>
+                            <p>your happiness and satisfaction our pleasure</p>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -44,8 +43,8 @@ const Home = () => {
 
                     <Carousel.Caption className="mb-5 pb-5">
                         <div className="mb-5 pb-5">
-                            <h3>Third slide label</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <h1>enjoy your tour with FunTouring</h1>
+                            <p>your happiness and satisfaction our pleasure</p>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -58,8 +57,8 @@ const Home = () => {
 
                     <Carousel.Caption className="mb-5 pb-5">
                         <div className="mb-5 pb-5">
-                            <h3>Third slide label</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <h1>enjoy your tour with FunTouring</h1>
+                            <p>your happiness and satisfaction our pleasure</p>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -72,22 +71,8 @@ const Home = () => {
 
                     <Carousel.Caption className="mb-5 pb-5">
                         <div className="mb-5 pb-5">
-                            <h3>Third slide label</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                        </div>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={banner5}
-                        alt="Third slide"
-                    />
-
-                    <Carousel.Caption className="mb-5 pb-5">
-                        <div className="mb-5 pb-5">
-                            <h3>Third slide label</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <h1>enjoy your tour with FunTouring</h1>
+                            <p>your happiness and satisfaction our pleasure</p>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -96,7 +81,7 @@ const Home = () => {
                 <Container>
                     <p className="text-center">Take a Look at Our</p>
                     <h2 className="text-uppercase mb-4 text-center">MOST POPULAR TOURS</h2>
-                    <Row md={3} className="g-3">
+                    <Row md={3} xs={1} className="g-3">
                         {
                             places.map(place => <Places
                                 key={place._id}

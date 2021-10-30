@@ -9,7 +9,7 @@ const Destination = () => {
         <Container className="py-5">
             <p className="text-center">Find a Tour by</p>
             <h2 className="text-uppercase mb-4 text-center">DESTINATION</h2>
-            <Row md={3} className="g-4">
+            <Row md={3} xs={1} className="g-4">
                 <Col className="shadow-sm">
                     <img className="w-100" src={destination1} alt="" />
                     <h4 className="text-uppercase mb-4 text-center">Brazil</h4>
