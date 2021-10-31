@@ -13,7 +13,7 @@ const ManageOrder = () => {
     const handleDeleteUser = id => {
         const deleting = window.confirm('Are you sure, you want to delete?');
         if (deleting) {
-            fetch(`http://localhost:5000/users/${id}`, {
+            fetch(`https://calm-plains-21354.herokuapp.com/users/${id}`, {
                 method: 'DELETE',
             })
                 .then(res => res.json())
