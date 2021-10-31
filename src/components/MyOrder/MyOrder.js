@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { Table } from 'react-bootstrap';
-import Order from '../Order/Order';
+import React from 'react';
 
 const MyOrder = () => {
-
     return (
-        <h1>hello</h1>
+        <div>
+
+        </div>
     );
 };
 

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Order = (props) => {
-    const { name, email, tour, date, phone } = props.user;
+    const { name, email, tour, date, phone, _id } = props.user;
     return (
         <tr>
             <td>{name}</td>
@@ -10,7 +10,7 @@ const Order = (props) => {
             <td>{tour}</td>
             <td>{date}</td>
             <td>
-                <button className="btn btn-warning">Delete</button>
+                <button onClick={() => props.handleDeleteUser(_id)} className="btn btn-warning">Delete</button>
             </td>
         </tr >
     );

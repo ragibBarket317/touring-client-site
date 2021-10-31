@@ -15,7 +15,7 @@ const Header = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto">
                             <Nav.Link as={Link} to="/home">Home</Nav.Link>
-                            <Nav.Link as={Link} to="/place">Features</Nav.Link>
+                            <Nav.Link as={Link} to="/service">Add Service</Nav.Link>
                             <Nav.Link as={Link} to="/manage">Manage Order</Nav.Link>
                             {user?.displayName ?
                                 <Nav.Link as={Link} to="/myorder">My Order</Nav.Link> :

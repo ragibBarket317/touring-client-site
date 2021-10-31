@@ -5,12 +5,12 @@ import Home from './components/Home/Home';
 import './App.css';
 import Footer from './components/Footer/Footer';
 import Details from './components/Details/Details';
-import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 import Login from './components/Login/Login';
 import AuthSupply from './context/AuthSupply';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import MyOrder from './components/MyOrder/MyOrder';
 import ManageOrder from './components/ManageOrder/ManageOrder';
+import AddService from './components/AddService/AddService';
 
 function App() {
   return (
@@ -25,9 +25,9 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <Route path="/place">
-              <PlaceOrder></PlaceOrder>
-            </Route>
+            <PrivateRoute path="/service">
+              <AddService></AddService>
+            </PrivateRoute>
             <PrivateRoute path="/manage">
               <ManageOrder></ManageOrder>
             </PrivateRoute>
